@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD']== 'POST'){
         if ($stmt->execute()){
             echo "<h1>Cadastro realizado com sucesso!</h1>";
             echo "<p>Bem-vindo, " . htmlspecialchars($email) . "!</p>";
-            echo '<a href="formulario.html">Voltar ao formulário</a>';
+            echo '<a href="tela_login.php">Voltar ao formulário</a>';
         }
         else{
             echo 'erro';
