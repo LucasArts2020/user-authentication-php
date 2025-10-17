@@ -12,7 +12,7 @@
 <body>
 
 <div class="login-container">
-    <form class="login-form" action="processa_formulario" method="post">
+    <form class="login-form" action="processa_login.php" method="post">
         <h2>Bem-vindo!</h2>
         <p>Faça login para continuar</p>
 

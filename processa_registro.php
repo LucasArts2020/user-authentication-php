@@ -4,15 +4,16 @@ if ($_SERVER['REQUEST_METHOD']== 'POST'){
     require_once 'conexaobd.php';
 
 
-    $email = htmlspecialchars($_POST['email']);
-    $senha = htmlspecialchars($_POST['password']);
+    $email = $_POST['email'];
+    $senhaPura = $_POST['password'];
+    $senha_hash = password_hash($senhaPura, PASSWORD_DEFAULT);
 
     try{
-        $sql= "INSERT INTO usuarios (email, senha) VALUES (:email, :senha)";
+        $sql= "INSERT INTO usuarios (email, senha_hash) VALUES (:email, :senha)";
         $stmt  = $pdo -> prepare($sql);
 
         $stmt ->bindParam(':email', $email);
-        $stmt ->bindParam(':senha', $senha);
+        $stmt ->bindParam(':senha', $senha_hash);
 
         if ($stmt->execute()){
             echo "<h1>Cadastro realizado com sucesso!</h1>";
