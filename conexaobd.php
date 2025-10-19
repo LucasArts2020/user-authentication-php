@@ -1,10 +1,10 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'banco_login';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
+$host = $_ENV['DB_HOST'];
+$dbname = $_ENV['DB_NAME'];
+$user = $_ENV['DB_USER'];
+$pass = $_ENV['DB_PASS'];
+$charset = $_ENV['DB_CHARSET'];
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [
@@ -14,7 +14,6 @@ $options = [
 ];
 try {
     $pdo = new PDO($dsn,$user, $pass, $options);
-    echo 'conectado';
 
 }
 catch (\PDOException $e){
