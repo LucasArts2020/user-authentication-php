@@ -4,11 +4,10 @@ require_once __DIR__ . '/../bootstrap.php';
 $erro_login = null;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    require __DIR__ . '/../src/processa_login.php';
+    require __DIR__ . '/../src/processa_registro.php';
 }
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -25,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
 <div class="login-container">
-    <form class="login-form" action="../src/processa_registro.php" method="post">
+    <form class="login-form" action="tela_registrar.php" method="post">
         <h2>Tela de registro</h2>
         <p>Faca o registro para acessar a tela</p>
 

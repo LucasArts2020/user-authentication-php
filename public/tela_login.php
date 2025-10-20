@@ -7,8 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require __DIR__ . '/../src/processa_login.php';
 }
 
-
-
 ?>
 
 
