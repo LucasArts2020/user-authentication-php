@@ -18,12 +18,12 @@ if ($usuario && password_verify($senha, $usuario['senha_hash'])){
         exit();
 
         } else {
-                // E-mail não existe ou senha incorreta
+
                $erro_login = "Você precisa verificar seu e-mail antes de fazer login.";
             }
 
     } else {
-            // Falha no login
+
             $erro_login = "E-mail ou senha inválido.";
         }
 
