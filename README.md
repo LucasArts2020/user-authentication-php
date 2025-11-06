@@ -55,6 +55,3 @@ cd user-authentication-php
 **5. Executar o projeto:**
 * Acesse o projeto no seu navegador, por exemplo: `http://localhost/user-authentication-php`
 
-## 📄 Licença
-
-*(Se o projeto tiver uma licença, como MIT, coloque aqui. Caso contrário, pode remover esta seção.)*
