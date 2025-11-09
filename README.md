@@ -16,9 +16,9 @@ Este projeto implementa as funcionalidades essenciais de autenticação de usuá
 ## 🛠️ Tecnologias Utilizadas
 
 * PHP
-* MySQL (ou MariaDB)
-* HTML5 (para os formulários)
-* CSS3 (para estilização básica)
+* MySQL 
+* HTML5 
+* CSS3
 
 ## 🔧 Instalação e Execução
 
